@@ -1,19 +1,6 @@
 package main
 
-import (
-    "testing"
-    "reflect"
-)
-
-func TestRomanNumeralConverterExists(t *testing.T) {
-    romanNumeralConverter := RomanNumeralConverter{}
-
-    v := reflect.TypeOf(romanNumeralConverter).Name()
-
-    if v != "RomanNumeralConverter" {
-        t.Errorf("Expected 'RomanNumeralConverter', got '%s'", v)
-    }
-}
+import "testing"
 
 func TestNumbersConvertToCorrectRomanNumerals(t *testing.T) {
     cases := []struct {
