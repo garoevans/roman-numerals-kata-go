@@ -4,8 +4,8 @@ type RomanNumeralConverter struct {
 }
 
 type RomanNumeralConvertion struct {
-    Number int
-    Numeral string
+    number int
+    numeral string
 }
 
 var mapping = []RomanNumeralConvertion{
@@ -25,14 +25,14 @@ var mapping = []RomanNumeralConvertion{
 }
 
 func (r *RomanNumeralConverter) Convert(number int) string {
-    var numeralString string;
+    var numeral string;
 
     for _, convertion := range mapping {
-        for (number - convertion.Number) >= 0 {
-            number -= convertion.Number
-            numeralString += convertion.Numeral
+        for (number - convertion.number) >= 0 {
+            number -= convertion.number
+            numeral += convertion.numeral
         }
     }
 
-    return numeralString;
+    return numeral;
 }

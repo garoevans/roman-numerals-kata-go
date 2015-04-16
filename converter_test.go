@@ -16,6 +16,7 @@ func TestNumbersConvertToCorrectRomanNumerals(t *testing.T) {
         {2015, "MMXV"},
         {1999, "MCMXCIX"},
         {1738, "MDCCXXXVIII"},
+        {0, ""},
     }
 
     r := RomanNumeralConverter{}
